@@ -1,0 +1,67 @@
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden; /* Evita rolagem na tela principal */
+}
+
+body {
+    background-image: url(./img/backgraund.gif);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh; /* Garante que o corpo da página não ultrapasse a altura da viewport */
+    overflow: auto; /* Adiciona rolagem ao corpo se necessário */
+}
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    max-width: 90%; /* Garante que o formulário não ultrapasse a largura da viewport */
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#metadata {
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 90vw; /* Garante que o conteúdo não ultrapasse a largura da viewport */
+    overflow: auto; /* Adiciona rolagem ao conteúdo dos metadados se necessário */
+    padding: 10px;
+    box-sizing: border-box;
+}
